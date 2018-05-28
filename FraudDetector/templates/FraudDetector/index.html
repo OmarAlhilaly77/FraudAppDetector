@@ -1,0 +1,37 @@
+{% extends "FraudDetector/header.html" %}
+{% load staticfiles %}
+    {% block content%}
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <h1 style="padding-bottom: 30px;">Fraud App Detector</h1>
+ 
+                    <img src="{% static 'FraudDetector/img/logo-android-green_1x.png' %}" style="background-color: white;padding: 20px;border-radius: 10px 0px 0px 10px;z-index: 9999;border-right: 1px solid grey"><img src="{% static 'FraudDetector/img/play_prism_hlock_2x.png' %}" style="background-color: white;padding: 20px;border-radius: 0px 10px 10px 0px;width: 161px">
+  
+                    <form method="post">
+                        
+                        
+                        
+                            <label for="usr"><strong>App Link:</strong></label>
+                            <input id="url" type="text" class="form-control" name="url" value="{{ url }}">
+                          
+   
+                       
+                        <br>
+                        <a href="loading.html"><input type="submit" class="btn btn-info" value="Submit" ></a>
+
+  
+                    </form>
+       
+                </div>
+                <div class="col">
+                    
+                    <img src="{% static 'FraudDetector/img/android-go_m.png' %}" style="height: 500px;margin-left: 60px">
+                </div>    
+    </div>
+        
+</div>
+    
+ {% endblock%}   
+

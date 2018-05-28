@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+    
+    <head>
+        
+        <title>Fraud App Detector</title>
+      
+        <link rel="stylesheet" href="{% static 'FraudDetector/css/bootstrap.min.css' %}" type="text/css" />
+        <link rel="stylesheet" href="{% static 'FraudDetector/css/style.css' %}" type="text/css" />
+        
+
+    </head>
+    <body>
+         {% block content%}
+        
+        
+         {% endblock%}   
+          <script src="{% static 'FraudDetector/js/jquery.min.js' %}"></script>
+  <script src="{% static 'FraudDetector/js/bootstrap.min.js' %}"></script>
+    </body>
+</html>
